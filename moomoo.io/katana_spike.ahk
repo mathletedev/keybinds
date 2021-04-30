@@ -84,11 +84,20 @@ RButton::
   }
 Return
 
-F::
+$Q::
+  Send q
+  while GetKeyState("Q", "P")
+  {
+    MouseGetPos posx, posy
+    Click posx, posy
+  }
+Return
+
+$F::
   Send {Enter}noob{Enter}
 Return
 
-G::
+$G::
   Send {Enter}git gud{Enter}
 Return
 
