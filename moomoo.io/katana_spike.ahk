@@ -58,12 +58,16 @@ Space::
   Sleep 125
   Send 1
   Click posx, posy
+  currSlot := 1
 Return
 
 Shift::
-  Send 7
-  MouseGetPos posx, posy
-  Click posx, posy
+  if (maxInv >= 7) {
+    Send 7
+    MouseGetPos posx, posy
+    Click posx, posy
+    currSlot := 7
+  }
 Return
 
 LButton::
@@ -73,6 +77,7 @@ LButton::
     MouseGetPos posx, posy
     Click posx, posy
   }
+  currSlot := 1
 Return
 
 RButton::
@@ -82,6 +87,7 @@ RButton::
     MouseGetPos posx, posy
     Click posx, posy
   }
+  currSlot := 2
 Return
 
 $Q::
@@ -91,6 +97,8 @@ $Q::
     MouseGetPos posx, posy
     Click posx, posy
   }
+  Send 1
+  currSlot := 1
 Return
 
 $F::
@@ -98,7 +106,7 @@ $F::
 Return
 
 $G::
-  Send {Enter}git gud{Enter}
+  Send {Enter}git{Space}gud{Enter}
 Return
 
 Esc::ExitApp
