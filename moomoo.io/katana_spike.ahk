@@ -51,7 +51,7 @@ WheelDown::
   else Send %currSlot%
 Return
 
-Space::
+$Space::
   Send 5
   MouseGetPos posx, posy
   Click posx, posy
@@ -91,9 +91,9 @@ RButton::
 Return
 
 $Q::
-  Send q
   while GetKeyState("Q", "P")
   {
+    Send q
     MouseGetPos posx, posy
     Click posx, posy
   }
