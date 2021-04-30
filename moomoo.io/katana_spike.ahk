@@ -106,7 +106,7 @@ $F::
 Return
 
 $G::
-  Send {Enter}git{Space}gud{Enter}
+  Send {Enter}git gud{Enter}
 Return
 
 Esc::ExitApp
