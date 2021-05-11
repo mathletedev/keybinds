@@ -2,5 +2,5 @@ CapsLock::
   Send {Esc}
 Return
 
-^F10::ExitApp
+^Esc::ExitApp
 ^P::Pause
