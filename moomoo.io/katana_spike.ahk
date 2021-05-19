@@ -114,5 +114,10 @@ $G::
   Send {Enter}git gud{Enter}
 Return
 
-^P::Pause
-Esc::ExitApp
+^Esc::
+  ExitApp
+Return
+
+^P::
+  Suspend
+Return

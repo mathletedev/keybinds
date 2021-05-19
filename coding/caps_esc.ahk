@@ -2,5 +2,10 @@ CapsLock::
   Send {Esc}
 Return
 
-^Esc::ExitApp
-^P::Pause
+^Esc::
+  ExitApp
+Return
+
+^P::
+  Suspend
+Return

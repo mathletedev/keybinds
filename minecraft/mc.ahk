@@ -26,4 +26,10 @@ Return
   Send {Space up}
 Return
 
-^Esc::ExitApp
+^Esc::
+  ExitApp
+Return
+
+^P::
+  Suspend
+Return
