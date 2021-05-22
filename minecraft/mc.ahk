@@ -7,6 +7,7 @@ CapsLock::
 	Sleep 120
 	Click Right
 	Send {Lshift up}
+
   while GetKeyState("CapsLock", "P")
   {
   	Sleep 200
@@ -16,6 +17,7 @@ CapsLock::
 		Sleep 30
 		Send {Lshift up}
   }
+  
   Send {s up}
 Return
 
@@ -24,6 +26,19 @@ Return
   Sleep 340
   Click Left
   Send {Space up}
+Return
+
+Tab::
+  Send {Ctrl down}
+  Send {w down}
+
+  while GetKeyState("Tab", "P")
+  {
+    Click Left
+  }
+
+  Send {Ctrl up}
+  Send {w up}
 Return
 
 ^Esc::
