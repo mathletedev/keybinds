@@ -1,4 +1,4 @@
-CapsLock::
+`::
   Click Right
   Sleep 2
   Send {s down}
@@ -8,7 +8,7 @@ CapsLock::
 	Click Right
 	Send {Lshift up}
 
-  while GetKeyState("CapsLock", "P")
+  while GetKeyState("`", "P")
   {
   	Sleep 200
 		Send {Lshift down}
@@ -39,6 +39,13 @@ Tab::
 
   Send {Ctrl up}
   Send {w up}
+Return
+
+CapsLock::
+  while GetKeyState("CapsLock", "P")
+  {
+    Click Right
+  }
 Return
 
 ^Esc::
