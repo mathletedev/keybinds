@@ -15,7 +15,7 @@ WheelDown::
 Return
 
 CapsLock::
-	Send 5
+	Send 6
 	Click Left
 Return
 
