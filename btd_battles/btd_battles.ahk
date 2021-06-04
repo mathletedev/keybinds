@@ -24,11 +24,11 @@ Shift::
 Return
 
 D::
-	Send >
+	Send {>}
 Return
 
 A::
-	Send <
+	Send {<}
 Return
 
 ^Esc::
