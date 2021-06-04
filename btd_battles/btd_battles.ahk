@@ -1,34 +1,41 @@
-currSlot := 1
-
-WheelUp::
-  currSlot -= 1
-  if (currSlot < 1)
-    currSlot := maxInv
-  else Send %currSlot%
+A::
+	Send 1
 Return
 
-WheelDown::
-  currSlot += 1
-  if (currSlot > 4)
-    currSlot := 1
-  else Send %currSlot%
+S::
+	Send 2
 Return
 
-CapsLock::
+D::
+	Send 3
+Return
+
+F::
+	Send 4
+Return
+
+Z::
+	Send 5
+Return
+
+X::
 	Send 6
-	Click Left
+Return
+
+C::
+	Send 7
 Return
 
 Shift::
 	Send {Tab}
 Return
 
-D::
-	Send >
+W::
+	Send .
 Return
 
-A::
-	Send <
+Q::
+	Send ,
 Return
 
 ^Esc::
