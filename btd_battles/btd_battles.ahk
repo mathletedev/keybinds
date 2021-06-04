@@ -20,7 +20,7 @@ CapsLock::
 Return
 
 Shift::
-	Send Tab
+	Send {Tab}
 Return
 
 D::
