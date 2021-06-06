@@ -35,7 +35,7 @@ W::
 Return
 
 Q::
-	Send ,
+	Send {,}
 Return
 
 ^Esc::
