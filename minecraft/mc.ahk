@@ -1,3 +1,7 @@
+isDown := False
+
+Return
+
 `::
   Click Right
   Sleep 2
@@ -46,6 +50,15 @@ CapsLock::
   {
     Click Right
   }
+Return
+
+Delete::
+  isDown := !isDown
+
+  if isDown
+    Click Down Right
+  else
+    Click Up Right
 Return
 
 ^Esc::
