@@ -1,3 +1,5 @@
+#MaxThreadsPerHotkey 2
+
 `::
   Click Right
   Sleep 2
@@ -51,8 +53,10 @@ Return
 Delete::
   isDown := !isDown
 
-  while isDown
+  Loop
   {
+    if not isDown
+      Break
     Click Right
     Sleep 1100
   }
