@@ -1,7 +1,3 @@
-isDown := False
-
-Return
-
 `::
   Click Right
   Sleep 2
@@ -55,10 +51,11 @@ Return
 Delete::
   isDown := !isDown
 
-  if isDown
-    Click Down Right
-  else
-    Click Up Right
+  while isDown
+  {
+    Click Right
+    Sleep 1100
+  }
 Return
 
 ^Esc::
