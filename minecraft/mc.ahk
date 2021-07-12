@@ -10,9 +10,9 @@
 	Click Right
 	Send {Lshift up}
 
-  while GetKeyState("`", "P")
+  while GetKeyState("`" "P")
   {
-  	Sleep 200
+		Sleep 200
 		Send {Lshift down}
 		Sleep 140
 		Click Right
@@ -30,11 +30,11 @@ Return
   Send {Space up}
 Return
 
-Tab::
+F1::
   Send {Ctrl down}
   Send {w down}
 
-  while GetKeyState("Tab", "P")
+  while GetKeyState("F1", "P")
   {
     Click Left
   }
@@ -45,6 +45,13 @@ Return
 
 CapsLock::
   while GetKeyState("CapsLock", "P")
+  {
+    Click Left
+  }
+Return
+
+Tab::
+  while GetKeyState("Tab", "P")
   {
     Click Right
   }
