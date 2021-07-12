@@ -30,11 +30,11 @@ Return
   Send {Space up}
 Return
 
-F1::
+F2::
   Send {Ctrl down}
   Send {w down}
 
-  while GetKeyState("F1", "P")
+  while GetKeyState("F2", "P")
   {
     Click Left
   }
